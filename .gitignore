@@ -1,0 +1,21 @@
+﻿# Backend - Maven / Java
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Frontend - Angular / Node
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+frontend/.env
+npm-debug.log*
+
+# OS noise
+.DS_Store
+Thumbs.db

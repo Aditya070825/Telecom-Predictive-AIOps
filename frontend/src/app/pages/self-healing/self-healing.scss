@@ -1,0 +1,267 @@
+.page-self-healing {
+  .page-title {
+    color: #f3f4f6;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .section-subtitle {
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  .stat-card {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+
+    .stat-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f3f4f6;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+  }
+
+  .agent-card {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 16px 18px;
+    height: 100%;
+
+    .agent-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .agent-name {
+        font-weight: 600;
+        font-size: 0.92rem;
+        color: #e5e7eb;
+
+        i {
+          color: #3b82f6;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .agent-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 10px;
+    }
+
+    .agent-bar {
+      height: 5px;
+      background-color: #0f172a;
+      border-radius: 3px;
+      overflow: hidden;
+
+      .agent-bar-fill {
+        height: 100%;
+        background-color: #22c55e;
+        border-radius: 3px;
+
+        &.idle {
+          background-color: #6b7280;
+        }
+      }
+    }
+  }
+
+  .panel {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+
+    .panel-title {
+      color: #e5e7eb;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+  }
+
+  .live-feed {
+    background-color: #0f172a;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #9ca3af;
+
+    .feed-line {
+      padding: 4px 0;
+    }
+
+    .feed-time {
+      color: #6b7280;
+      margin-right: 10px;
+    }
+
+    .feed-success {
+      color: #22c55e;
+      font-weight: 600;
+    }
+
+    .feed-failed {
+      color: #ef4444;
+      font-weight: 600;
+    }
+  }
+}.page-self-healing {
+  .page-title {
+    color: #f3f4f6;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .section-subtitle {
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  .stat-card {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+
+    .stat-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f3f4f6;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+  }
+
+  .agent-card {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 16px 18px;
+    height: 100%;
+
+    .agent-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .agent-name {
+        font-weight: 600;
+        font-size: 0.92rem;
+        color: #e5e7eb;
+
+        i {
+          color: #3b82f6;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .agent-meta {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 10px;
+    }
+
+    .agent-bar {
+      height: 5px;
+      background-color: #0f172a;
+      border-radius: 3px;
+      overflow: hidden;
+
+      .agent-bar-fill {
+        height: 100%;
+        background-color: #22c55e;
+        border-radius: 3px;
+
+        &.idle {
+          background-color: #6b7280;
+        }
+      }
+    }
+  }
+
+  .panel {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+
+    .panel-title {
+      color: #e5e7eb;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+  }
+
+  .live-feed {
+    background-color: #0f172a;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #9ca3af;
+
+    .feed-line {
+      padding: 4px 0;
+    }
+
+    .feed-time {
+      color: #6b7280;
+      margin-right: 10px;
+    }
+
+    .feed-success {
+      color: #22c55e;
+      font-weight: 600;
+    }
+
+    .feed-failed {
+      color: #ef4444;
+      font-weight: 600;
+    }
+  }
+}

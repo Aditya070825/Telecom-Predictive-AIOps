@@ -1,0 +1,83 @@
+<div class="page-forecast">
+  <h2 class="page-title">Predictive Forecasting</h2>
+  <p class="page-subtitle">Projected load and capacity for the week ahead</p>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-primary"><i class="fa-solid fa-gauge-high"></i></div>
+        <div class="stat-value">612 Mbps</div>
+        <div class="stat-label">Forecasted Peak Load</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-success"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="stat-value">91.3%</div>
+        <div class="stat-label">Forecast Accuracy</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-warning"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="stat-value">Aug 14</div>
+        <div class="stat-label">Capacity Threshold Date</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-12">
+      <div class="panel">
+        <h5 class="panel-title">Actual vs Predicted Load</h5>
+        <div class="chart-placeholder">Forecast line chart with confidence band goes here (Phase 10)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12">
+      <div class="panel">
+        <h5 class="panel-title">7-Day Regional Forecast</h5>
+        <table class="table table-dark table-hover mb-0">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Day 1</th>
+              <th>Day 3</th>
+              <th>Day 5</th>
+              <th>Day 7</th>
+              <th>Trend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>North</td>
+              <td>410 Mbps</td>
+              <td>438 Mbps</td>
+              <td>462 Mbps</td>
+              <td>501 Mbps</td>
+              <td><span class="badge bg-danger">Rising</span></td>
+            </tr>
+            <tr>
+              <td>South</td>
+              <td>388 Mbps</td>
+              <td>390 Mbps</td>
+              <td>385 Mbps</td>
+              <td>392 Mbps</td>
+              <td><span class="badge bg-success">Stable</span></td>
+            </tr>
+            <tr>
+              <td>Central</td>
+              <td>455 Mbps</td>
+              <td>470 Mbps</td>
+              <td>498 Mbps</td>
+              <td>540 Mbps</td>
+              <td><span class="badge bg-danger">Rising</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,147 @@
+.page-executive {
+  .page-title {
+    color: #f3f4f6;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .section-subtitle {
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  .stat-card {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+
+    .stat-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f3f4f6;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+  }
+
+  .timeline-strip {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+
+    .timeline-panel {
+      flex: 1;
+      padding: 20px;
+
+      .timeline-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 8px;
+        color: #6b7280;
+      }
+
+      .timeline-headline {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: #e5e7eb;
+        margin-bottom: 4px;
+      }
+
+      .timeline-detail {
+        font-size: 0.82rem;
+        color: #9ca3af;
+      }
+
+      &.past {
+        background-color: #151d2e;
+      }
+
+      &.present {
+        background-color: #17223a;
+        border-left: 1px solid #1f2937;
+        border-right: 1px solid #1f2937;
+
+        .timeline-label {
+          color: #3b82f6;
+        }
+      }
+
+      &.future {
+        background-color: #151d2e;
+      }
+    }
+  }
+
+  .panel {
+    background-color: #151d2e;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+
+    .panel-title {
+      color: #e5e7eb;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+  }
+
+  table {
+    color: #e5e7eb;
+
+    th {
+      color: #9ca3af;
+      font-weight: 500;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      border-color: #1f2937;
+    }
+
+    td {
+      border-color: #1f2937;
+      vertical-align: middle;
+    }
+  }
+
+  .highlight-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #1f2937;
+      font-size: 0.87rem;
+      color: #d1d5db;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .highlight-time {
+        color: #6b7280;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

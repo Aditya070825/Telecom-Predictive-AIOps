@@ -1,0 +1,90 @@
+﻿<div class="page-overview">
+  <h2 class="page-title">Overview Dashboard</h2>
+  <p class="page-subtitle">Real-time network health across all regions</p>
+
+  <div *ngIf="loading()" class="text-center text-light py-5">Loading tower data...</div>
+  <div *ngIf="error()" class="alert alert-danger">Failed to load tower data. Is the backend running?</div>
+
+  <ng-container *ngIf="!loading() && !error()">
+    <div class="row g-3 mb-4">
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+          <div class="stat-value">{{ towers().length }}</div>
+          <div class="stat-label">Total Towers</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon text-warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div class="stat-value">4</div>
+          <div class="stat-label">Active Incidents</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon text-success"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="stat-value">92.4%</div>
+          <div class="stat-label">Avg Network Health</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-icon text-danger"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="stat-value">3</div>
+          <div class="stat-label">Predicted Risk Alerts</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-6">
+        <div class="panel">
+          <h5 class="panel-title">Tower Status</h5>
+          <div class="chart-placeholder">Donut chart goes here (Phase 10)</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel">
+          <h5 class="panel-title">24h Network Traffic</h5>
+          <div class="chart-placeholder">Line chart goes here (Phase 10)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-12">
+        <div class="panel">
+          <h5 class="panel-title">Towers Needing Attention</h5>
+          <table class="table table-dark table-hover mb-0">
+            <thead>
+              <tr>
+                <th>Tower ID</th>
+                <th>Name</th>
+                <th>Region</th>
+                <th>Status</th>
+                <th>Signal (dBm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let tower of towers()">
+                <td>{{ tower.towerId }}</td>
+                <td>{{ tower.towerName }}</td>
+                <td>{{ tower.region }}</td>
+                <td>
+                  <span class="badge" [ngClass]="{
+                    'bg-danger': tower.status === 'DOWN',
+                    'bg-warning text-dark': tower.status === 'DEGRADED',
+                    'bg-success': tower.status === 'ACTIVE',
+                    'bg-secondary': tower.status === 'MAINTENANCE'
+                  }">{{ tower.status }}</span>
+                </td>
+                <td>{{ tower.signalStrengthDbm }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

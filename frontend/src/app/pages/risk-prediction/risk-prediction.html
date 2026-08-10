@@ -1,0 +1,89 @@
+﻿<div class="page-risk">
+  <h2 class="page-title">Risk Prediction</h2>
+  <p class="page-subtitle">Towers at risk of failure, ranked by predicted impact</p>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-danger"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="stat-value">6</div>
+        <div class="stat-label">High-Risk Towers</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-warning"><i class="fa-solid fa-bolt"></i></div>
+        <div class="stat-value">4</div>
+        <div class="stat-label">Predicted Failures</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="stat-card">
+        <div class="stat-icon text-success"><i class="fa-solid fa-brain"></i></div>
+        <div class="stat-value">87.5%</div>
+        <div class="stat-label">Model Confidence</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-md-6">
+      <div class="panel">
+        <h5 class="panel-title">Risk Heatmap</h5>
+        <div class="chart-placeholder">Risk heatmap / scatter chart goes here (Phase 10)</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel">
+        <h5 class="panel-title">Risk Factor Breakdown</h5>
+        <div class="chart-placeholder">Risk factor bar chart goes here (Phase 10)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12">
+      <div class="panel">
+        <h5 class="panel-title">Towers Ranked by Risk</h5>
+        <table class="table table-dark table-hover mb-0">
+          <thead>
+            <tr>
+              <th>Tower ID</th>
+              <th>Name</th>
+              <th>Region</th>
+              <th>Risk Score</th>
+              <th>Risk Level</th>
+              <th>Predicted Issue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TWR-011</td>
+              <td>Tower 11</td>
+              <td>Central</td>
+              <td>95.99</td>
+              <td><span class="badge bg-danger">High</span></td>
+              <td>Signal degradation trend</td>
+            </tr>
+            <tr>
+              <td>TWR-001</td>
+              <td>Tower 1</td>
+              <td>Central</td>
+              <td>90.96</td>
+              <td><span class="badge bg-danger">High</span></td>
+              <td>Elevated latency expected</td>
+            </tr>
+            <tr>
+              <td>TWR-006</td>
+              <td>Tower 6</td>
+              <td>North</td>
+              <td>55.05</td>
+              <td><span class="badge bg-warning text-dark">Medium</span></td>
+              <td>Hardware failure risk rising</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

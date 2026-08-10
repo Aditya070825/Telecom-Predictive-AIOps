@@ -1,0 +1,19 @@
+package com.telecom.aiops.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ForecastTowerRowDto {
+    private String towerId;
+    private String towerName;
+    private String region;
+    private double predictedLoadMbps;
+    private double confidencePercent;
+    private String forecastWindow;
+}

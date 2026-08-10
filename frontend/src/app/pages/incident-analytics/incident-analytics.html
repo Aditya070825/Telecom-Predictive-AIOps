@@ -1,0 +1,88 @@
+﻿<div class="page-incidents">
+  <h2 class="page-title">Incident Analytics</h2>
+  <p class="page-subtitle">Track and resolve network incidents</p>
+  <div class="row g-3 mb-4">
+    <div class="col-md-3">
+      <div class="stat-card">
+        <div class="stat-icon text-warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="stat-value">11</div>
+        <div class="stat-label">Open Incidents</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card">
+        <div class="stat-icon text-success"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="stat-value">4</div>
+        <div class="stat-label">Resolved Today</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+        <div class="stat-value">55.3 min</div>
+        <div class="stat-label">Avg Resolution Time</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="stat-card">
+        <div class="stat-icon text-danger"><i class="fa-solid fa-fire"></i></div>
+        <div class="stat-value">3</div>
+        <div class="stat-label">Critical Count</div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3 mb-4">
+    <div class="col-md-5">
+      <div class="panel">
+        <h5 class="panel-title">Severity Breakdown</h5>
+        <div class="chart-placeholder">Severity pie chart goes here (Phase 10)</div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="panel">
+        <h5 class="panel-title">Incidents Over Time</h5>
+        <div class="chart-placeholder">Incidents-over-time bar chart goes here (Phase 10)</div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3">
+    <div class="col-12">
+      <div class="panel">
+        <h5 class="panel-title">Incident Log</h5>
+        <table class="table table-dark table-hover mb-0">
+          <thead>
+            <tr>
+              <th>Incident ID</th>
+              <th>Tower ID</th>
+              <th>Title</th>
+              <th>Severity</th>
+              <th>Status</th>
+              <th>Region</th>
+              <th>Created At</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INC-0002</td>
+              <td>TWR-006</td>
+              <td>Packet loss spike</td>
+              <td><span class="badge bg-danger">Critical</span></td>
+              <td><span class="badge bg-secondary">Failed</span></td>
+              <td>North</td>
+              <td>06:52</td>
+            </tr>
+            <tr>
+              <td>INC-0008</td>
+              <td>TWR-001</td>
+              <td>Congestion alert</td>
+              <td><span class="badge bg-warning text-dark">Medium</span></td>
+              <td><span class="badge bg-info text-dark">In Progress</span></td>
+              <td>North</td>
+              <td>06:26</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
