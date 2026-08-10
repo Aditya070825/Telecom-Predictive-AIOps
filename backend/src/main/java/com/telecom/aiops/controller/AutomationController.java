@@ -14,7 +14,7 @@ public class AutomationController {
 
     private final AutomationService automationService;
 
-    @GetMapping("/api/dashboard")
+    @GetMapping("/api/automation")
     public AutomationResponseDto getAutomationDashboard() {
         return automationService.getAutomationData();
     }
