@@ -5,31 +5,31 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a routerLink="/overview" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('overview')" routerLink="/overview" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-gauge-high"></i>
       <span>Overview</span>
     </a>
-    <a routerLink="/kpi-intelligence" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('kpi-intelligence')" routerLink="/kpi-intelligence" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-chart-line"></i>
       <span>KPI Intelligence</span>
     </a>
-    <a routerLink="/incident-analytics" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('incident-analytics')" routerLink="/incident-analytics" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-triangle-exclamation"></i>
       <span>Incident Analytics</span>
     </a>
-    <a routerLink="/risk-prediction" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('risk-prediction')" routerLink="/risk-prediction" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-shield-halved"></i>
       <span>Risk Prediction</span>
     </a>
-    <a routerLink="/forecasting" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('forecasting')" routerLink="/forecasting" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-cloud-sun-rain"></i>
       <span>Forecasting</span>
     </a>
-    <a routerLink="/self-healing" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('self-healing')" routerLink="/self-healing" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-wrench"></i>
       <span>Self Healing</span>
     </a>
-    <a routerLink="/executive-monitoring" routerLinkActive="active" class="nav-link">
+    <a *ngIf="canSee('executive-monitoring')" routerLink="/executive-monitoring" routerLinkActive="active" class="nav-link">
       <i class="fa-solid fa-briefcase"></i>
       <span>Executive Monitoring</span>
     </a>
